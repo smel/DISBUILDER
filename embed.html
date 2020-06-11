@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DISBUILDER</title>
+       
+        
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="Create a discord bot without coding">
+        <meta name="author" content="smel">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+    <div class="title-wrapper">
+      <center>
+        <img alt="DB Logo" src="https://cdn.discordapp.com/attachments/635702367303630848/720206432682901524/20200610_171805.jpg" style="width: 50px" />
+        <h1 style="display: inline">DISBUILDER</h1>
+        <p style="display: inline">v1.0.0 beta</p>
+      </center>
+    </div>
+<h1>Embed Maker</h1>
+</center>
+<div>
+  <div class="embed-animation">
+  <form>
+    
+    <div>
+  <h2 style="display: inline">Title</h2>
+  <p style="display: inline">note: this is part is not important if you don't want a title on your embeds.</p>
+</div>
+<input id="title" class="main-textarea" placeholder=" Enter your preferred title."></input>
+
+<div>
+<h2 style="display: inline">Color</h2>
+<p style="display: inline">note: example color codes are <a href="https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812">here</a>.</p>
+<div>
+<input id="color" class="main-textarea" placeholder=" Enter your preferred color."></input>
+</div>
+</div>
+<div>
+<div>
+<h2 style="display: inline">Description</h2>
+<p style="display: inline">note: do \n to enter</p>
+</div>
+<input id="description" class="main-textarea" placeholder=" Enter your preferred description."></input>
+</div>
+<div style="line-height: 5px">
+<input value="Generate" type="button" class="generate-button" onclick="resultvisibility()"/>
+</form>
+<h3>Title</h3>
+<p id="titlresult">Your title will show up here...</p>
+<h3>Color</h3>
+<p id="colresult">Your color will show up here...</p>
+<h3>Description</h3>
+<p id="descresult">Your description will show up here...</p>
+</div>
+<center>
+  <div style="line-height: 15px">
+<h1>Results</h1>
+<p>use <a href="https://www.prettifyjs.net/">https://www.prettifyjs.net/</a> to beutify your code</p>
+ 
+</div>
+<div class="result-box">
+<p style="margin-left: 6px"  id="embed-result">
+   The code will apper once you click the Generate button.
+</p>
+</div>
+</center>
+</div>
+
+
+<script src="embed.js"></script>
+</body>
+
+</html>
